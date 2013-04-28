@@ -9,9 +9,9 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 01 Defaults
 02 Typography -typ
 03 Global Elements -glbl
-      03a Navigation -nav
-      03b Header
-      03c Footer
+  03a Navigation -nav
+  03b Header
+  03c Footer
 04 Page Specific Elements -pse
 05 Grid -gs
 06 Helper Classes -hc
@@ -24,7 +24,7 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 
 ##Other stuff included
 * jQuery 1.9.1 is registered in functions.php to prevent multiple instances of jQuery being loaded so don't link it in your header.php or whatever.
-* [Modernizr](http://modernizr.com/) - Comes in handy as most of our projects need to have IE7/8 support. The html5shiv v3.6 is included in Modernizr.  Use the [build tool](http://modernizr.com/download/)  to create a custom build based on the projects need.
+* [Modernizr](http://modernizr.com/) - Comes in handy as most of our projects need to have IE7/8 support. The html5shiv v3.6 is included in Modernizr.  Use the [build tool](http://modernizr.com/download/)  to create a custom build based on the projects needs.
 
 ###Included in /js/plugins.php
 * [Selectivizr](http://selectivizr.com/) - It's a bummer IE7/8 don't support attribute selectors and CSS3 pseudo-classes (for the most part), this fixes that.
