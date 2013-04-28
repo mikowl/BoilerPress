@@ -13,10 +13,7 @@ function my_jquery_enqueue() {
 }
 
 /* ==============================================================================================================
-
 Theme specific settings
-Uncomment register_nav_menus to enable a single menu with the title of "Primary Navigation" in your theme
-
 ============================================================================================================== */
 
 register_nav_menus(array('primary' => 'Primary Navigation'));
@@ -47,10 +44,29 @@ register_sidebar(array(
 	'after_title' => '</h2>'
 ));
 
+// Function to list child pages of current page (if any)
+function display_children() {
+  global $post;
+  if($post->post_parent) {
+    $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+  }
+  else {
+    $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+  }
+  if ($children) {
+   echo '<nav class="subnav"><ul>' . $children . '</ul></nav>';
+  }
+}
 
 /* Adds "Featured Image" to pages and posts */
 add_theme_support('post-thumbnails');
 
+/* Add "Read more" (or modify below to whatever you'd like) to the_excerpt(); */
+function new_excerpt_more($more) {
+       global $post;
+  return ' [...]<br><a class="read-more" href="'. get_permalink($post->ID) . '"> Read more</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 /* The function belows displays the "feature image" with the caption in a figure element */
 /* Also useful for responsive designs as it spits out the image with no width or height attributes set */

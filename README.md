@@ -9,9 +9,9 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 01 Defaults
 02 Typography -typ
 03 Global Elements -glbl
-  03a Navigation -nav
-  03b Header
-  03c Footer
+   03a Navigation -nav
+   03b Header
+   03c Footer
 04 Page Specific Elements -pse
 05 Grid -gs
 06 Helper Classes -hc
