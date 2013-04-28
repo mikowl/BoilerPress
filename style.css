@@ -3,7 +3,7 @@ Theme Name: BoilerPress 1.0
 Theme URI:
 Description: An HTML5/WordPress boilerplate created for myself and TMD.
 Author: Michael Elias
-Author URI: http://tmdcreative.com
+Author URI: https://github.com/mikowl/BoilerPress/
 Version: 1.0
 *******************************************************************/
 
@@ -16,7 +16,9 @@ Version: 1.0
     01 Defaults
     02 Typography -typ
     03 Global Elements -glbl
-       03A Navigation
+       03a Navigation
+       03b Header
+       03c Footer
     04 Page Specific Elements -pse
     05 Grid -gs
     06 Helper Classes -hc
@@ -77,11 +79,6 @@ h1 {
 }
 
 
-
-
-
-
-
 /* ==========================================================================
    03 Global Elements #glbl
    ========================================================================== */
@@ -93,12 +90,27 @@ h1 {
 
 
 
-/* 03A Navigation #nav
+/* 03a Navigation #nav
    ========================================================================== */
 
-nav ul {list-style: none;}
+nav ul {
+  list-style: none;
+}
 
-nav li {display:inline-block;}
+nav li {
+  display:inline-block;
+}
+
+
+/* 03b Header #hdr
+   ========================================================================== */
+
+
+
+
+
+/* 03c Footer #ftr
+   ========================================================================== */
 
 
 
@@ -302,14 +314,14 @@ nav li {display:inline-block;}
 /* 400 and up */
 @media screen and (min-width:400px) {
 
-					{ /* Place your styles here for all widths greater than 400px */ }
+  { /* Place your styles here for all widths greater than 400px */ }
 
 }
 
 /* Retina Display */
 @media screen and (-webkit-min-device-pixel-ratio:2) {
 
-					{ /* Place your styles here for all 'Retina' screens */ }
+  { /* Place your styles here for all 'Retina' screens */ }
 
 }
 

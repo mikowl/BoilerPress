@@ -3,13 +3,15 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 
 *This is a very early rough version.*
 
-#Notes on base stylesheet
+##Notes on base stylesheet
 ###Not quite sure the best way to organize our stylesheets, but as a base, here's what I propose so far:
 ```
 01 Defaults
 02 Typography -typ
 03 Global Elements -glbl
-03A Navigation -nav
+      03a Navigation -nav
+      03b Header
+      03c Footer
 04 Page Specific Elements -pse
 05 Grid -gs
 06 Helper Classes -hc

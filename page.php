@@ -1,9 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all WordPress "Pages" by default.
- *
+ * The template that displays all WordPress "Pages" by default.
  */
 ?>
 <?php get_header(); ?>

@@ -1,7 +1,6 @@
 <?php
 /**
  * The Sidebar containing the main widget areas.
- *
  */
 ?>
   <div class="widget-area" role="complementary">
