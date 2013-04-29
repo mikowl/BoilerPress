@@ -1,9 +1,6 @@
 <?php
 /**
- * The main template file
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
+ * The main template file, usually used for the main blog/news postings landing page.
  */
 ?>
 <?php get_header(); ?>
@@ -20,12 +17,15 @@
       			<?php the_content(); ?>
       		</article>
       <?php endwhile; ?>
-
+      <?php if (function_exists("paginate_plz")) {
+          paginate_plz();
+      } ?>
       <?php else: ?>
-      <h2>No posts to display</h2>
+      <h2>Not Found</h2>
+      <p>Sorry, but you are looking for something that isn't here</p>
+      <?php get_search_form(); ?>
       <?php endif; ?>
     </div>
-
     <div class="grid4">
       <?php get_sidebar(); ?>
     </div>
