@@ -10,8 +10,8 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 02 Typography -typ
 03 Global Elements -glbl
    03a Navigation -nav
-   03b Header
-   03c Footer
+   03b Header -hdr
+   03c Footer -ftr
 04 Page Specific Elements -pse
 05 Grid -gs
 06 Helper Classes -hc
@@ -32,5 +32,4 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 
 ##Stuff to add
 * Root files like .htaccess that includes gzipping and all that fun stuff.
-* Maybe add [Advanced Custom Fields](https://github.com/elliotcondon/acf/) snippets and examples in a template file. I use ACF in every project because it's awesome and fixes most short comings WP has as a CMS.
-* A file that queries all posts with pagination, not sure if this should be included in the index.php or a template file.
+* Maybe add [Advanced Custom Fields](https://github.com/elliotcondon/acf/) snippets and examples in a template file. ACF is awesome and fixes most short comings WP has as a CMS.
