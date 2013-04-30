@@ -1,6 +1,5 @@
 /******************************************************************
 Theme Name: BoilerPress 1.0
-Theme URI:
 Description: An HTML5/WordPress boilerplate created for myself and TMD.
 Author: Michael Elias
 Author URI: https://github.com/mikowl/BoilerPress/
@@ -11,19 +10,23 @@ Version: 1.0
 
   Let's stay away from using ID selectors as much as possible.
   and do your best to prevent using "Magic Numbers" (http://css-tricks.com/magic-numbers-in-css/)
+  Try to keep things DRY (more info: http://ow.ly/kzaNt)
 
   CONTENTS: (Search #xxx next to name to easily navigate to section)
     01 Defaults
     02 Typography -typ
     03 Global Elements -glbl
-       03a Navigation
-       03b Header
-       03c Footer
+      - Navigation -nav
+      - Header -hdr
+      - Footer -ftr
     04 Page Specific Elements -pse
-    05 Grid -gs
-    06 Helper Classes -hc
-    07 Media Queries -mc
-    08 WordPress Base Styles -wpc
+      - Blog styles -blog
+    05 Forms/Buttons -forms
+    06 Grid -gs
+    07 Helper Classes -hc
+    08 Media Queries -mc
+    09 WordPress Base Styles -wpc
+    10 Print Styles
 
   ========================================================================== */
 
@@ -90,7 +93,7 @@ h1 {
 
 
 
-/* 03a Navigation #nav
+/* Navigation #nav
    ========================================================================== */
 
 nav ul {
@@ -102,14 +105,14 @@ nav li {
 }
 
 
-/* 03b Header #hdr
+/* Header #hdr
    ========================================================================== */
 
 
 
 
 
-/* 03c Footer #ftr
+/* Footer #ftr
    ========================================================================== */
 
 
@@ -127,10 +130,26 @@ nav li {
 
 
 
+/* Blog Styles #blog
+   ========================================================================== */
+
+
+
+
+
 
 
 /* ==========================================================================
-  05 Grid #gs
+   05 Forms/Buttons #forms
+   ========================================================================== */
+
+
+
+
+
+
+/* ==========================================================================
+  06 Grid #gs
 
   12 column grid system adapted from Bootstrap's fluid grid
   3 Column Layout Example:
@@ -238,7 +257,7 @@ nav li {
 }
 
 /* ==========================================================================
-   06 Helper classes #hc
+   07 Helper classes #hc
    ========================================================================== */
 
 .ir {
@@ -308,7 +327,7 @@ nav li {
 
 
 /* ==========================================================================
-  07 Media Queries #mq
+  08 Media Queries #mq
    ========================================================================== */
 
 /* 400 and up */
@@ -327,7 +346,7 @@ nav li {
 
 
 /* ==========================================================================
-   08 WordPress Core Styles #wpc
+   09 WordPress Core Styles #wpc
    These are the styles the WordPress post editor spits out when adding images, modify as needed.
    ========================================================================== */
 
@@ -411,3 +430,38 @@ a img.aligncenter {
     padding: 0 4px 5px;
 }
 
+/* ==========================================================================
+   10 Print Styles
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a, a:visited {text-decoration: underline;}
+  a[href]:after {content: " (" attr(href) ")";}
+  abbr[title]:after {content: " (" attr(title) ")";}
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {content: "";}
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {display: table-header-group; }
+  tr, img {page-break-inside: avoid;}
+  img {max-width: 100% !important;}
+
+  @page {margin: 0.5cm;}
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {page-break-after: avoid;}
+}
