@@ -9,14 +9,16 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 01 Defaults
 02 Typography -typ
 03 Global Elements -glbl
-   03a Navigation -nav
-   03b Header -hdr
-   03c Footer -ftr
+   - Navigation -nav
+   - Header -hdr
+   - Footer -ftr
 04 Page Specific Elements -pse
-05 Grid -gs
-06 Helper Classes -hc
-07 Media Queries -mc
-08 WordPress Base Styles -wpc
+   - Blog Styles -blog
+05 Forms/Buttons
+06 Grid -gs
+07 Helper Classes -hc
+08 Media Queries -mc
+09 WordPress Base Styles -wpc
 ```
 * You can jump down to a section by searching #xxx, for example to navigate to the grid simply search #gs
 * Included is a basic grid system based on [Bootstraps](https://github.com/twitter/bootstrap) 12 column fluid grid
@@ -26,10 +28,11 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 * jQuery 1.9.1 is registered in functions.php to prevent multiple instances of jQuery being loaded so don't link it in your header.php or whatever.
 * [Modernizr](http://modernizr.com/) - Comes in handy as most of our projects need to have IE7/8 support. The html5shiv v3.6 is included in Modernizr.  Use the [build tool](http://modernizr.com/download/)  to create a custom build based on the projects needs.
 
-###Included in /js/plugins.php
+###Included in /js/plugins.js
 * [Selectivizr](http://selectivizr.com/) - It's a bummer IE7/8 don't support attribute selectors and CSS3 pseudo-classes (for the most part), this fixes that.
 * [Placeholder polyfill](https://github.com/mathiasbynens/jquery-placeholder) - "Enables HTML5 placeholder behavior for browsers that aren’t trying hard enough yet."  For form input placeholders just do this type of thing:  `<input type="text" placeholder="Search...">`
 
 ##Stuff to add
 * Root files like .htaccess that includes gzipping and all that fun stuff.
-* Maybe add [Advanced Custom Fields](https://github.com/elliotcondon/acf/) snippets and examples in a template file. ACF is awesome and fixes most short comings WP has as a CMS.
+* Add [Advanced Custom Fields](https://github.com/elliotcondon/acf/) snippets and examples in a template file. ACF is awesome and fixes most short comings WP has as a CMS.
+* More default styles, possibly an icon font with basic common icons.
