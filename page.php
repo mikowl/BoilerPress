@@ -5,11 +5,10 @@
 ?>
 <?php get_header(); ?>
 
-<section class="post-<?php the_ID(); ?>">
+<section class="page-<?php the_ID(); ?>">
   <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
   <h2><?php the_title(); ?></h2>
   <?php the_content(); ?>
-  <?php comments_template(); ?>
   <?php endwhile; ?>
 </section>
 
