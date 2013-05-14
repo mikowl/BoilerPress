@@ -95,30 +95,43 @@ function is_tree($pid) {
   return false;
 }
 
-// Function to list child pages of current page (if any)
-/* Template Usage:
-<?php if (function_exists("display_children")) {
-    display_children();
-} ?>
+/*
+  Function to list child pages of current page (if any)
+  Set to depth parameter to 1 to only display immediate children, 0 to display all
+  Template Usage:
+  <?php if (function_exists("display_children")) {
+      display_children(1);
+  } ?>
 */
-function display_children() {
+function display_children($depth) {
   global $post;
   if($post->post_parent) {
-    $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+    $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=1&depth=$depth");
   }
   else {
-    $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+    $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=1&depth=$depth");
   }
   if ($children) {
    echo '<nav class="subnav"><ul>' . $children . '</ul></nav>';
   }
 }
 
-/* ==============================================================================================================
+// Grabs the topmost parent id
+function get_top_parent_page_id() {
+  global $post;
+  $ancestors = $post->ancestors;
+  if ($ancestors) {
+      return end($ancestors);
+  } else {
+      return $post->ID;
+  }
+}
 
+
+/* ==============================================================================================================
 Custom Post Types - include custom post types and taxonimies here e.g.
 e.g. require_once( 'custom-post-types/your-custom-post-type.php' );
-
+See example custom post type in snippets folder.
 ============================================================================================================== */
 
 
