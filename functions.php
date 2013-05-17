@@ -48,7 +48,7 @@ function featurecaption() {
     echo '</figure>';
     }
   else {
-    echo '<figure class="page-feature"><img src="' . get_template_directory_uri() . '/images/featuredefault.jpg">';
+    echo '<figure class="page-feature"><img src="' . get_template_directory_uri() . '/images/featuredefault.jpg"></figure>';
   }
 }
 
