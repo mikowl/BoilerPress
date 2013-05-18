@@ -8,10 +8,6 @@ Version: 1.0
 
 /* ==========================================================================
 
-  Let's stay away from using ID selectors as much as possible.
-  and do your best to prevent using "Magic Numbers" (http://css-tricks.com/magic-numbers-in-css/)
-  Try to keep things DRY (more info: http://ow.ly/kzaNt)
-
   CONTENTS: (Search #xxx next to name to easily navigate to section)
     01 Defaults
     02 Typography -typ
@@ -20,7 +16,8 @@ Version: 1.0
       - Header -hdr
       - Footer -ftr
     04 Page Specific Elements -pse
-      - Blog styles -blog
+      - Home -home
+      - Blog -blog
     05 Forms/Buttons -forms
     06 Grid -gs
     07 Helper Classes -hc
@@ -119,11 +116,19 @@ nav li {
 
 
 
+
 /* ==========================================================================
    04 Page Specific Elements #pse
    ========================================================================== */
-   /* Put home page specific elements and other page specific classes here */
 
+
+
+
+
+
+
+/* Homepage #home
+   ========================================================================== */
 
 
 

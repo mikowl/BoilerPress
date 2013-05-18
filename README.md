@@ -24,7 +24,11 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 * Included is a basic grid system based on [Bootstraps](https://github.com/twitter/bootstrap) 12 column fluid grid
 * A slightly modified version of [Normalize](https://github.com/necolas/normalize.css/) is included in the css folder and @imported in the stylesheet. For production you should concatenate and minify into one file. Not the end of the world if you don't though.
 
-##Other stuff included
+##General CSS guidelines
+*  Let's stay away from using ID selectors as much as possible. and do your best to prevent using [Magic Numbers](http://css-tricks.com/magic-numbers-in-css/)
+* Try to keep things DRY [more info](http://ow.ly/kzaNt)
+
+##Notes
 * jQuery 1.9.1 is registered in functions.php to prevent multiple instances of jQuery being loaded so don't link it in your header.php or whatever.
 * [Modernizr](http://modernizr.com/) - Comes in handy as most of our projects need to have IE7/8 support. The html5shiv v3.6 is included in Modernizr.  Use the [build tool](http://modernizr.com/download/)  to create a custom build based on the projects needs.
 
@@ -33,6 +37,7 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 * [Placeholder polyfill](https://github.com/mathiasbynens/jquery-placeholder) - "Enables HTML5 placeholder behavior for browsers that aren’t trying hard enough yet."  For form input placeholders just do this type of thing:  `<input type="text" placeholder="Search...">`
 
 ##Stuff to add
-* Root files like .htaccess that includes gzipping and all that fun stuff.
+* ~~Root files like .htaccess that includes gzipping and all that fun stuff.~~
 * Add [Advanced Custom Fields](https://github.com/elliotcondon/acf/) snippets and examples in a template file. ACF is awesome and fixes most short comings WP has as a CMS.
-* More default styles, possibly an icon font with basic common icons.
+* Include more default styling? Maybe some base form styling?
+* Common icon set using a custom icon font
