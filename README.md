@@ -13,6 +13,7 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
    - Header -hdr
    - Footer -ftr
 04 Page Specific Elements -pse
+   - Home -home
    - Blog Styles -blog
 05 Forms/Buttons
 06 Grid -gs
@@ -24,11 +25,11 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 * Included is a basic grid system based on [Bootstraps](https://github.com/twitter/bootstrap) 12 column fluid grid
 * A slightly modified version of [Normalize](https://github.com/necolas/normalize.css/) is included in the css folder and @imported in the stylesheet. For production you should concatenate and minify into one file. Not the end of the world if you don't though.
 
-##General CSS guidelines
+###General CSS guidelines
 *  Let's stay away from using ID selectors as much as possible. and do your best to prevent using [Magic Numbers](http://css-tricks.com/magic-numbers-in-css/)
 * Try to keep things DRY [more info](http://ow.ly/kzaNt)
 
-##Notes
+###Notes
 * jQuery 1.9.1 is registered in functions.php to prevent multiple instances of jQuery being loaded so don't link it in your header.php or whatever.
 * [Modernizr](http://modernizr.com/) - Comes in handy as most of our projects need to have IE7/8 support. The html5shiv v3.6 is included in Modernizr.  Use the [build tool](http://modernizr.com/download/)  to create a custom build based on the projects needs.
 
