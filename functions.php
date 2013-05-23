@@ -54,8 +54,8 @@ function featurecaption() {
 
 /* Pagination
 Template Usage:
-<?php if (function_exists("do_pagination")) {
-    do_pagination();
+<?php if (function_exists("pageinate_plz")) {
+    paginate_plz();
 } ?>
 ========================================================================== */
 
@@ -99,9 +99,11 @@ function is_tree($pid) {
   Function to list child pages of current page (if any)
   Set to depth parameter to 1 to only display immediate children, 0 to display all
   Template Usage:
-  <?php if (function_exists("display_children")) {
-      display_children(1);
-  } ?>
+  <nav class="subnav">
+    <ul>
+      <?php if (function_exists("display_children")) { display_children(1); } ?>
+    </ul>
+  </nav>
 */
 function display_children($depth) {
   global $post;
@@ -112,7 +114,7 @@ function display_children($depth) {
     $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=1&depth=$depth");
   }
   if ($children) {
-   echo '<nav class="subnav"><ul>' . $children . '</ul></nav>';
+   echo $children;
   }
 }
 
