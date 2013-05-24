@@ -6,17 +6,19 @@
 ?>
 
 <?php
-
 /* Example of common date formatting using the date picker field */
 
 if(get_field('date_picker')) {
 	$date = DateTime::createFromFormat('Ymd', get_field('date'));
 	echo '<time>' . $date->format('m-d-Y') . '</time>'; 
 }
-
 ?>
-
-/* Header photo with conditional fallbacks */
+ 
+ <?php
+ /* ==========================================================================
+	  Header photo with conditional fallbacks 
+    ========================================================================== */
+?>
 
 <?php if(get_field('masthead')): /* Check if a masthead is chosen for actual page */ ?>
 <?php $image = wp_get_attachment_image_src(get_field('masthead'), 'full'); ?>
