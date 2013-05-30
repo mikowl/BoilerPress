@@ -16,7 +16,7 @@ if(get_field('date_picker')) {
  
  <?php
  /* ==========================================================================
-	  Header photo with conditional fallbacks 
+		Header photo with conditional fallbacks 
     ========================================================================== */
 ?>
 

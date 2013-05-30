@@ -34,6 +34,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 /* Just add <?php featurecaption(); ?> where you want it to display in your template */
 
 /* Adds "Featured Image" to pages and posts */
+
 add_theme_support('post-thumbnails');
 
 function featurecaption() {
@@ -128,13 +129,3 @@ function get_top_parent_page_id() {
       return $post->ID;
   }
 }
-
-
-/* ==============================================================================================================
-Custom Post Types - include custom post types and taxonimies here e.g.
-e.g. require_once( 'custom-post-types/your-custom-post-type.php' );
-See example custom post type in snippets folder.
-============================================================================================================== */
-
-
-
