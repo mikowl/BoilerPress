@@ -42,3 +42,4 @@ A starter theme/boilerplate for WordPress created mostly for myself and team @ [
 * Add [Advanced Custom Fields](https://github.com/elliotcondon/acf/) snippets and examples in a template file. ACF is awesome and fixes most short comings WP has as a CMS.
 * Include more default styling? Maybe some base form styling?
 * Common icon set using a custom icon font
+* Fork a Sass/Compass version with a Grunt file that includes basic project helpers like jshint, csslint, image minifier, etc.
