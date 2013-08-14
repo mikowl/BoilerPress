@@ -84,7 +84,7 @@ h1 {
    ========================================================================== */
 
 .container {
-  width:1100px;
+  max-width:1100px;
   margin:0 auto;
 }
 
@@ -201,15 +201,6 @@ nav li {
 
 .row [class*="grid"]:first-child {
   margin-left: 0;
-}
-
-.nm [class*="grid"] {
-  margin-left: 0;
-}
-
-.row.nm .grid8 {
-  width: 68.37606837606838%;
-  *width: 68.26968539734497%;
 }
 
 .row .grid12 {
