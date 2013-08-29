@@ -34,7 +34,7 @@ Version: 1.0
 
 @import "css/normalize.css";
 
-.container, div, article, section, header, footer, nav, li {
+.container, div, article, section, header, footer, nav {
 /* For absolutely positioning elements within containers (add more to the list if need be) */
   position:relative;
 }
